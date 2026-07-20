@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.1.0 (2026-07-20)
+
+Lazy loading for the file and folder pickers.
+
+- File and folder pickers are now Resource Locators that load contents **one folder level at a time** instead of fetching the entire library tree / full file list up front. This drastically speeds up the pickers on large libraries.
+- Browse by typing a path (e.g. `/invoices/2024/`) to drill deeper, or switch to **By Path** to enter a path/expression directly.
+- Applies to all file and folder selectors across the File, Folder, Search, Share and Tag actions.
+
+**Migration note:** the affected parameters changed from simple dropdowns to Resource Locators, which changes how the value is stored. Existing workflows may need the file/folder to be re-selected in the picker; the **By Path** mode still accepts any previously used path or expression.
+
 ## v2.0.1 (2024-08-28)
 
 - Improved return values structure of the File Search

@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-seafile",
-	"version": "2.0.1",
+	"version": "2.1.0",
 	"description": "n8n app to interact with the Neutrino API.",
 	"keywords": [
 		"n8n-community-node-package"
