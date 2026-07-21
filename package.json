@@ -33,7 +33,7 @@
 			"dist/credentials/SeafileApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/Seafile/Seafile.node.js"
+			"dist/nodes/Seafile/SeafileLazy.node.js"
 		]
 	},
 	"devDependencies": {
