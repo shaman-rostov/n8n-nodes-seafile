@@ -6,8 +6,8 @@ import { SeafileV1 } from './v1/SeafileV1.node';
 export class Seafile extends VersionedNodeType {
 	constructor() {
 		const baseDescription: INodeTypeBaseDescription = {
-			displayName: 'Seafile',
-			name: 'seafile',
+			displayName: 'Seafile Lazy',
+			name: 'seafileLazy',
 			icon: 'file:seafile.svg',
 			group: ['output'],
 			subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
