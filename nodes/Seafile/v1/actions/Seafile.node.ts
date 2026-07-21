@@ -9,15 +9,15 @@ import * as tags from './tags';
 import * as libraries from './libraries';
 
 export const versionDescription: INodeTypeDescription = {
-	displayName: 'Seafile',
+	displayName: 'Seafile (lazy)',
 	name: 'seafile',
 	icon: 'file:seafile.svg',
 	group: ['output'],
 	version: 1,
 	subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
-	description: 'Interact with the Seafile API.',
+	description: 'Interact with Seafile, with lazy-loaded folder and file selection.',
 	defaults: {
-		name: 'Seafile Api',
+		name: 'Seafile (lazy)',
 	},
 	inputs: ['main'],
 	outputs: ['main'],

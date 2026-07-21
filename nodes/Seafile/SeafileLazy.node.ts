@@ -11,7 +11,7 @@ export class SeafileLazy extends VersionedNodeType {
 			icon: 'file:seafile.svg',
 			group: ['output'],
 			subtitle: '={{$parameter["resource"] + ": " + $parameter["operation"]}}',
-			description: 'Interact with the Neutrino general-purpose API.',
+			description: 'Interact with Seafile, with lazy-loaded folder and file selection.',
 			defaultVersion: 1,
 		};
 
