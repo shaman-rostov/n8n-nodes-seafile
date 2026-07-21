@@ -1,19 +1,19 @@
 {
-	"name": "n8n-nodes-seafile",
-	"version": "2.1.0",
-	"description": "n8n app to interact with the Neutrino API.",
+	"name": "n8n-nodes-seafile-lazy",
+	"version": "1.0.1",
+	"description": "n8n community node for Seafile with lazy loading folder and file selection.",
 	"keywords": [
 		"n8n-community-node-package"
 	],
 	"license": "MIT",
 	"homepage": "https://datamate.org/",
 	"author": {
-		"name": "Christoph Dyllick-Brenzinger",
-		"email": "cdb@datamate.org"
+		"name": "Sergey Shinkarenko",
+		"email": "shaman.rostov@gmail.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/datamate-rethink-it/n8n-nodes-seafile.git"
+		"url": "https://github.com/shaman-rostov/n8n-nodes-seafile.git"
 	},
 	"main": "index.js",
 	"scripts": {
