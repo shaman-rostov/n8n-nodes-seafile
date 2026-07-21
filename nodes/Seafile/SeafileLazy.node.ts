@@ -6,7 +6,7 @@ import { SeafileV1 } from './v1/SeafileV1.node';
 export class SeafileLazy extends VersionedNodeType {
 	constructor() {
 		const baseDescription: INodeTypeBaseDescription = {
-			displayName: 'Seafile Lazy',
+			displayName: 'Seafile (lazy)',
 			name: 'seafileLazy',
 			icon: 'file:seafile.svg',
 			group: ['output'],
