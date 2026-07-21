@@ -3,7 +3,7 @@ import { VersionedNodeType } from 'n8n-workflow';
 
 import { SeafileV1 } from './v1/SeafileV1.node';
 
-export class Seafile extends VersionedNodeType {
+export class SeafileLazy extends VersionedNodeType {
 	constructor() {
 		const baseDescription: INodeTypeBaseDescription = {
 			displayName: 'Seafile Lazy',
