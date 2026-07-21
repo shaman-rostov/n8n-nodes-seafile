@@ -23,7 +23,7 @@ export const versionDescription: INodeTypeDescription = {
 	outputs: ['main'],
 	credentials: [
 		{
-			name: 'seafileApi',
+			name: 'seafileLazyApi',
 			required: true,
 		},
 	],

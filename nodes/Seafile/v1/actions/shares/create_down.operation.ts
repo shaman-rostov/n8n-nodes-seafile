@@ -138,7 +138,7 @@ export async function execute(
 	this: IExecuteFunctions,
 	index: number,
 ): Promise<INodeExecutionData[]> {
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	// get parameters
@@ -180,7 +180,7 @@ export async function execute(
 
 	const responseData = await this.helpers.requestWithAuthentication.call(
 		this,
-		'seafileApi',
+		'seafileLazyApi',
 		options,
 	);
 

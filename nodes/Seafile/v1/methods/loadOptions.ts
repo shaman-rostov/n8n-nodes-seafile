@@ -7,7 +7,7 @@ import {
 export async function getRepos(this: ILoadOptionsFunctions): Promise<INodePropertyOptions[]> {
 	const returnData: INodePropertyOptions[] = [];
 
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	const options: IRequestOptions = {
@@ -17,7 +17,7 @@ export async function getRepos(this: ILoadOptionsFunctions): Promise<INodeProper
 		json: true,
 	};
 
-	const repoList = await this.helpers.requestWithAuthentication.call(this, 'seafileApi', options);
+	const repoList = await this.helpers.requestWithAuthentication.call(this, 'seafileLazyApi', options);
 
 	if (repoList) {
 		for (const repo of repoList) {
@@ -35,7 +35,7 @@ export async function getDownloadLink(
 ): Promise<INodePropertyOptions[]> {
 	const returnData: INodePropertyOptions[] = [];
 
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	const repo = this.getCurrentNodeParameter('repo') as string;
@@ -52,7 +52,7 @@ export async function getDownloadLink(
 
 	const shareLinkList = await this.helpers.requestWithAuthentication.call(
 		this,
-		'seafileApi',
+		'seafileLazyApi',
 		options,
 	);
 
@@ -71,7 +71,7 @@ export async function getDownloadLink(
 export async function getUploadLink(this: ILoadOptionsFunctions): Promise<INodePropertyOptions[]> {
 	const returnData: INodePropertyOptions[] = [];
 
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	const repo = this.getCurrentNodeParameter('repo') as string;
@@ -88,7 +88,7 @@ export async function getUploadLink(this: ILoadOptionsFunctions): Promise<INodeP
 
 	const shareLinkList = await this.helpers.requestWithAuthentication.call(
 		this,
-		'seafileApi',
+		'seafileLazyApi',
 		options,
 	);
 
@@ -107,7 +107,7 @@ export async function getUploadLink(this: ILoadOptionsFunctions): Promise<INodeP
 export async function getTags(this: ILoadOptionsFunctions): Promise<INodePropertyOptions[]> {
 	const returnData: INodePropertyOptions[] = [];
 
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	const repo = this.getCurrentNodeParameter('repo') as string;
@@ -122,7 +122,7 @@ export async function getTags(this: ILoadOptionsFunctions): Promise<INodePropert
 		json: true,
 	};
 
-	const repoTags = await this.helpers.requestWithAuthentication.call(this, 'seafileApi', options);
+	const repoTags = await this.helpers.requestWithAuthentication.call(this, 'seafileLazyApi', options);
 
 	for (const tag of repoTags.repo_tags) {
 		returnData.push({

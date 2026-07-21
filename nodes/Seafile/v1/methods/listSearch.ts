@@ -48,7 +48,7 @@ async function listDir(
 	repo: string,
 	dir: string,
 ): Promise<Dirent[]> {
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	const options: IRequestOptions = {
@@ -63,7 +63,7 @@ async function listDir(
 	try {
 		const response = await this.helpers.requestWithAuthentication.call(
 			this,
-			'seafileApi',
+			'seafileLazyApi',
 			options,
 		);
 		return (response?.dirent_list ?? []) as Dirent[];

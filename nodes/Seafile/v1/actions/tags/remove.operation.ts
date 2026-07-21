@@ -58,7 +58,7 @@ export async function execute(
 	this: IExecuteFunctions,
 	index: number,
 ): Promise<INodeExecutionData[]> {
-	const credentials = await this.getCredentials('seafileApi');
+	const credentials = await this.getCredentials('seafileLazyApi');
 	const baseURL = credentials?.domain;
 
 	// get parameters
@@ -76,7 +76,7 @@ export async function execute(
 		json: true,
 	};
 
-	const fileTags = await this.helpers.requestWithAuthentication.call(this, 'seafileApi', options1);
+	const fileTags = await this.helpers.requestWithAuthentication.call(this, 'seafileLazyApi', options1);
 
 	let file_tag_id = '';
 	for (const tag of fileTags.file_tags) {
@@ -97,7 +97,7 @@ export async function execute(
 
 		const responseData = await this.helpers.requestWithAuthentication.call(
 			this,
-			'seafileApi',
+			'seafileLazyApi',
 			options,
 		);
 
