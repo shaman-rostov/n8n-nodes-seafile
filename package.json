@@ -6,7 +6,7 @@
 		"n8n-community-node-package"
 	],
 	"license": "MIT",
-	"homepage": "https://datamate.org/",
+	"homepage": "https://github.com/shaman-rostov/n8n-nodes-seafile",
 	"author": {
 		"name": "Sergey Shinkarenko",
 		"email": "shaman.rostov@gmail.com"
