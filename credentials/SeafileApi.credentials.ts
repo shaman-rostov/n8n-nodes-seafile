@@ -6,7 +6,7 @@ import type {
 } from 'n8n-workflow';
 
 export class SeafileApi implements ICredentialType {
-	name = 'seafileApi';
+	name = 'seafileLazyApi';
 	displayName = 'Seafile API';
 	//documentationUrl = 'https://seafile-api.readme.io/';
 	properties: INodeProperties[] = [

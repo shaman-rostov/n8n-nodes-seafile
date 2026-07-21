@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-seafile-lazy",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "n8n community node for Seafile with lazy loading folder and file selection.",
 	"keywords": [
 		"n8n-community-node-package"
